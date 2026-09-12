@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Technova Inc. builds modern software, AI, cloud, and digital solutions that help ambitious organizations solve complex problems and grow."
+    />
+    <title>Technova Inc. — Technology That Moves Your Business Forward</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Icon sprite -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path
+          d="M5 12h14M13 6l6 6-6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-code" viewBox="0 0 24 24">
+        <path
+          d="m8 9-3 3 3 3M16 9l3 3-3 3M13 5l-2 14"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-chip" viewBox="0 0 24 24">
+        <rect x="6" y="6" width="12" height="12" rx="2" />
+        <rect x="10" y="10" width="4" height="4" rx="1" />
+        <path
+          d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24">
+        <path
+          d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.6 1.4A4 4 0 0 0 6 19h11.5z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24">
+        <path
+          d="M12 3l7 3v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <path
+          d="m9 12 2 2 4-4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24">
+        <path
+          d="M4 20V10M10 20V4M16 20v-7M20 20H3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-compass" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="8.5" />
+        <path
+          d="m15.5 8.5-2 5-5 2 2-5z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-star" viewBox="0 0 20 20">
+        <path
+          d="M10 1.5l2.6 5.4 5.9.8-4.3 4.1 1 5.8L10 14.9l-5.2 2.7 1-5.8L1.5 7.7l5.9-.8z"
+        />
+      </symbol>
+      <symbol id="i-badge" viewBox="0 0 24 24">
+        <circle
+          cx="12"
+          cy="12"
+          r="7"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+        />
+        <path
+          d="M12 2v3M12 19v3M2 12h3M19 12h3"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+          stroke-linecap="round"
+        />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect
+          x="3"
+          y="5"
+          width="18"
+          height="14"
+          rx="2.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+        />
+        <path
+          d="m4 7 8 6 8-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path
+          d="M12 21s-7-5.1-7-11a7 7 0 0 1 14 0c0 5.9-7 11-7 11z"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+          stroke-linejoin="round"
+        />
+        <circle
+          cx="12"
+          cy="10"
+          r="2.5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.6"
+        />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"
+        />
+      </symbol>
+      <symbol id="i-x" viewBox="0 0 24 24" fill="currentColor">
+        <path
+          d="M18.9 1.15h3.7l-8.1 9.25L24 22.85h-7.45l-5.9-7.7-6.7 7.7H.25l8.65-9.9L0 1.15h7.65l5.3 7 6-7zm-1.3 19.5h2.05L6.55 3.24H4.35l13.25 17.4z"
+        />
+      </symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24">
+        <rect
+          x="3"
+          y="3"
+          width="18"
+          height="18"
+          rx="5"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+        />
+        <circle
+          cx="12"
+          cy="12"
+          r="4"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.7"
+        />
+        <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
+      </symbol>
+    </svg>
+
+    <!-- Announcement bar -->
+    <div class="announce">
+      <div class="container announce-inner">
+        <p class="announce-msg">
+          <svg class="icon"><use href="#i-badge" /></svg>
+          Technology that moves your business forward.
+        </p>
+        <div class="announce-actions">
+          <a href="#contact" class="announce-link">Talk to our team</a>
+          <div class="announce-socials">
+            <a href="#" aria-label="LinkedIn" class="social-link"
+              ><svg class="icon"><use href="#i-linkedin" /></svg
+            ></a>
+            <a href="#" aria-label="X (Twitter)" class="social-link"
+              ><svg class="icon"><use href="#i-x" /></svg
+            ></a>
+            <a href="#" aria-label="Instagram" class="social-link"
+              ><svg class="icon"><use href="#i-instagram" /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="container nav" aria-label="Primary">
+        <a href="#home" class="logo" aria-label="Technova Inc. home">
+          <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="2" y="2" width="36" height="36" rx="11" fill="#A8F45B" />
+            <path
+              d="M13.5 11.5h13M20 11.5v17"
+              stroke="#063B38"
+              stroke-width="4.2"
+              stroke-linecap="round"
+            />
+            <circle cx="29.5" cy="29.5" r="3" fill="#063B38" />
+          </svg>
+          <span class="logo-text">
+            <span class="logo-name">Technova</span>
+            <span class="logo-inc">INC.</span>
+          </span>
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#solutions" class="nav-link">Solutions</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#work" class="nav-link">Industries</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#insights" class="nav-link">Insights</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary btn-nav">Let's Talk</a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-inner">
+        <ul>
+          <li><a href="#home" class="mobile-link">Home</a></li>
+          <li><a href="#solutions" class="mobile-link">Solutions</a></li>
+          <li><a href="#services" class="mobile-link">Services</a></li>
+          <li><a href="#work" class="mobile-link">Industries</a></li>
+          <li><a href="#about" class="mobile-link">About</a></li>
+          <li><a href="#insights" class="mobile-link">Insights</a></li>
+          <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary btn-block">Let's Talk</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero" id="home">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="hero-grid"></div>
+          <div class="hero-glow glow-1"></div>
+          <div class="hero-glow glow-2"></div>
+        </div>
+
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <div class="trust-badge reveal">
+              <span class="trust-stars" aria-hidden="true">
+                <svg class="star"><use href="#i-star" /></svg>
+                <svg class="star"><use href="#i-star" /></svg>
+                <svg class="star"><use href="#i-star" /></svg>
+                <svg class="star"><use href="#i-star" /></svg>
+                <svg class="star"><use href="#i-star" /></svg>
+              </span>
+              Trusted by modern teams
+            </div>
+
+            <h1 class="hero-title reveal">
+              Building the technology<br />behind your
+              <span class="hl">next&nbsp;big&nbsp;move.</span>
+            </h1>
+            <p class="hero-sub reveal">
+              Technova Inc. helps ambitious organizations design, build, and
+              scale digital products, intelligent systems, and technology
+              infrastructure that create measurable business impact.
+            </p>
+            <div class="hero-cta reveal">
+              <a href="#contact" class="btn btn-primary btn-lg">
+                Start a Project
+                <svg class="btn-arrow"><use href="#i-arrow" /></svg>
+              </a>
+              <a href="#solutions" class="btn btn-outline-light"
+                >Explore Solutions</a
+              >
+            </div>
+            <p class="hero-cred reveal">
+              Software &bull; AI &bull; Cloud &bull; Digital Transformation
+            </p>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="hero-img-wrap">
+              <img
+                src="./assets/images/hero-image.jpg"
+                alt="Technova engineers collaborating on a digital product in a modern office"
+                width="880"
+                height="1100"
+                fetchpriority="high"
+              />
+              <div class="hero-img-overlay" aria-hidden="true"></div>
+            </div>
+            <div class="float-card fc-1">
+              <span class="fc-num">99.9%</span>
+              <span class="fc-label">System Reliability</span>
+            </div>
+            <div class="float-card fc-2">
+              <span class="fc-num">24/7</span>
+              <span class="fc-label">Technology Support</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Approach / Features -->
+      <section class="approach section offwhite" id="solutions">
+        <div class="container">
+          <div class="approach-head">
+            <div class="approach-heading reveal">
+              <span class="eyebrow">Our Approach</span>
+              <h2 class="section-title">
+                Technology designed<br />around real business<br />outcomes.
+              </h2>
+            </div>
+            <p class="approach-para reveal">
+              We combine strategic thinking, engineering expertise, and emerging
+              technology to turn complex challenges into scalable digital
+              solutions.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card card-white reveal">
+              <div class="feature-icon">
+                <svg class="icon"><use href="#i-code" /></svg>
+              </div>
+              <h3>Digital Product Engineering</h3>
+              <p>
+                From concept to launch, we build reliable digital products
+                designed around your users and business goals.
+              </p>
+              <a href="#services" class="card-link"
+                >Explore More
+                <svg class="btn-arrow"><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+
+            <article class="feature-card card-lime reveal">
+              <div class="feature-icon">
+                <svg class="icon"><use href="#i-chip" /></svg>
+              </div>
+              <h3>AI &amp; Intelligent Systems</h3>
+              <p>
+                Apply practical AI and automation to improve decisions,
+                workflows, customer experiences, and operational efficiency.
+              </p>
+              <a href="#services" class="card-link"
+                >Explore More
+                <svg class="btn-arrow"><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+
+            <article class="feature-card card-dark reveal">
+              <div class="feature-icon">
+                <svg class="icon"><use href="#i-cloud" /></svg>
+              </div>
+              <h3>Cloud &amp; Technology Infrastructure</h3>
+              <p>
+                Build secure, scalable infrastructure that keeps your products
+                fast, resilient, and ready for growth.
+              </p>
+              <a href="#services" class="card-link"
+                >Explore More
+                <svg class="btn-arrow"><use href="#i-arrow" /></svg
+              ></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Company intro -->
+      <section class="company section" id="about">
+        <div class="container company-inner">
+          <div class="collage reveal">
+            <img
+              class="collage-main"
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1100&q=80"
+              alt="Technova team members collaborating around a shared laptop"
+              width="1100"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+            <img
+              class="collage-sub"
+              src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=700&q=80"
+              alt="Technova developer focused on engineering code"
+              width="700"
+              height="700"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="collage-stat">
+              <span class="collage-stat-num">10+</span>
+              <span class="collage-stat-label"
+                >Years of Technology Experience</span
+              >
+            </div>
+          </div>
+
+          <div class="company-content">
+            <span class="eyebrow reveal">Who We Are</span>
+            <h2 class="section-title reveal">
+              Technology expertise<br />built for ambitious<br />organizations.
+            </h2>
+            <p class="company-text reveal">
+              Technova Inc. is a technology partner helping organizations
+              navigate digital transformation through thoughtful strategy,
+              modern engineering, and practical innovation.
+            </p>
+            <a href="#contact" class="btn btn-outline-dark reveal"
+              >More About Technova
+              <svg class="btn-arrow"><use href="#i-arrow" /></svg
+            ></a>
+            <p class="company-cred reveal">Technology-led. Outcome-focused.</p>
+
+            <div class="company-cards">
+              <div class="info-card reveal">
+                <span class="info-num">99.9%</span>
+                <span class="info-label">Reliability mindset</span>
+                <p>
+                  Systems and teams engineered to stay up when it matters most.
+                </p>
+              </div>
+              <div class="info-card reveal">
+                <span class="info-label-muted">Core Expertise</span>
+                <div class="pill-row">
+                  <span class="pill">AI</span>
+                  <span class="pill">Cloud</span>
+                  <span class="pill">Software</span>
+                  <span class="pill">Data</span>
+                  <span class="pill">Automation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="services section offwhite" id="services">
+        <div class="container">
+          <div class="approach-head">
+            <div class="approach-heading reveal">
+              <span class="eyebrow">Our Services</span>
+              <h2 class="section-title">
+                Technology services<br />built for what's next.
+              </h2>
+            </div>
+            <p class="approach-para reveal">
+              A focused set of engineering capabilities, delivered end-to-end —
+              from strategy and design to deployment and continuous improvement.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-num">01</span
+                ><svg class="icon"><use href="#i-code" /></svg>
+              </div>
+              <h3>Software Development</h3>
+              <p>
+                Modern web and mobile applications engineered for performance,
+                reliability, and scale.
+              </p>
+              <svg class="service-arrow btn-arrow"><use href="#i-arrow" /></svg>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-num">02</span
+                ><svg class="icon"><use href="#i-chip" /></svg>
+              </div>
+              <h3>AI &amp; Automation</h3>
+              <p>
+                Intelligent workflows and machine learning that remove
+                repetitive work and sharpen decisions.
+              </p>
+              <svg class="service-arrow btn-arrow"><use href="#i-arrow" /></svg>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-num">03</span
+                ><svg class="icon"><use href="#i-cloud" /></svg>
+              </div>
+              <h3>Cloud Solutions</h3>
+              <p>
+                Scalable infrastructure, migrations, and cost-optimized
+                deployments across the major platforms.
+              </p>
+              <svg class="service-arrow btn-arrow"><use href="#i-arrow" /></svg>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-num">04</span
+                ><svg class="icon"><use href="#i-shield" /></svg>
+              </div>
+              <h3>Cybersecurity &amp; Infrastructure</h3>
+              <p>
+                Threat assessment, hardening, and resilient architecture that
+                protect your systems and data.
+              </p>
+              <svg class="service-arrow btn-arrow"><use href="#i-arrow" /></svg>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-num">05</span
+                ><svg class="icon"><use href="#i-chart" /></svg>
+              </div>
+              <h3>Data &amp; Analytics</h3>
+              <p>
+                Pipelines, dashboards, and decision intelligence that turn raw
+                data into business advantage.
+              </p>
+              <svg class="service-arrow btn-arrow"><use href="#i-arrow" /></svg>
+            </article>
+            <article class="service-card reveal">
+              <div class="service-top">
+                <span class="service-num">06</span
+                ><svg class="icon"><use href="#i-compass" /></svg>
+              </div>
+              <h3>Digital Product Strategy</h3>
+              <p>
+                Product discovery, roadmaps, and technical architecture that set
+                ambitious launches up to succeed.
+              </p>
+              <svg class="service-arrow btn-arrow"><use href="#i-arrow" /></svg>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technology stack -->
+      <section class="stack section dark">
+        <div class="container">
+          <div class="approach-head approach-head-on-dark">
+            <div class="approach-heading reveal">
+              <span class="eyebrow">Capabilities</span>
+              <h2 class="section-title">
+                Built across the modern<br />technology stack.
+              </h2>
+            </div>
+            <p class="approach-para reveal">
+              We work with the tools our engineers trust for speed, security,
+              and long-term maintainability.
+            </p>
+          </div>
+
+          <div class="stack-grid">
+            <div class="stack-group reveal">
+              <h3>Frontend</h3>
+              <div class="pill-row pill-row-dark">
+                <span class="pill">React</span><span class="pill">Next.js</span
+                ><span class="pill">TypeScript</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>Backend</h3>
+              <div class="pill-row pill-row-dark">
+                <span class="pill">Node.js</span><span class="pill">PHP</span
+                ><span class="pill">Laravel</span
+                ><span class="pill">Python</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>AI &amp; Data</h3>
+              <div class="pill-row pill-row-dark">
+                <span class="pill">AI</span
+                ><span class="pill">Machine Learning</span
+                ><span class="pill">Data Engineering</span
+                ><span class="pill">Automation</span>
+              </div>
+            </div>
+            <div class="stack-group reveal">
+              <h3>Cloud</h3>
+              <div class="pill-row pill-row-dark">
+                <span class="pill">AWS</span><span class="pill">Azure</span
+                ><span class="pill">Cloud Infrastructure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Case studies / Work -->
+      <section class="work section offwhite" id="work">
+        <div class="container">
+          <div class="approach-head">
+            <div class="approach-heading reveal">
+              <span class="eyebrow">Selected Work</span>
+              <h2 class="section-title">
+                Technology that solves<br />real problems.
+              </h2>
+            </div>
+            <p class="approach-para reveal">
+              A few examples of how we apply engineering to industries with high
+              stakes and complex requirements.
+            </p>
+          </div>
+
+          <div class="case-grid">
+            <article class="case-card reveal">
+              <div class="case-media">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1100&q=80"
+                  alt="Fintech analytics dashboard on large screens"
+                  width="1100"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="case-body">
+                <span class="case-tag">Fintech Platform</span>
+                <h3>Reimagining digital financial operations</h3>
+                <p>
+                  Unified payments, reconciliation, and reporting into a single
+                  secure platform.
+                </p>
+                <a href="#contact" class="card-link"
+                  >View Case Study
+                  <svg class="btn-arrow"><use href="#i-arrow" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-media">
+                <img
+                  src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1100&q=80"
+                  alt="Healthcare technology connecting clinicians with patient data"
+                  width="1100"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="case-body">
+                <span class="case-tag">Healthcare Technology</span>
+                <h3>Connecting people, data, and care</h3>
+                <p>
+                  Digital records and telemedicine workflows that keep care
+                  coordinated and compliant.
+                </p>
+                <a href="#contact" class="card-link"
+                  >View Case Study
+                  <svg class="btn-arrow"><use href="#i-arrow" /></svg
+                ></a>
+              </div>
+            </article>
+            <article class="case-card reveal">
+              <div class="case-media">
+                <img
+                  src="https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?auto=format&fit=crop&w=1100&q=80"
+                  alt="Automation infrastructure powering intelligent workflows"
+                  width="1100"
+                  height="700"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <div class="case-body">
+                <span class="case-tag">Business Automation</span>
+                <h3>Turning repetitive workflows into intelligent systems</h3>
+                <p>
+                  Automated operations that cut manual effort and let teams
+                  focus on growth.
+                </p>
+                <a href="#contact" class="card-link"
+                  >View Case Study
+                  <svg class="btn-arrow"><use href="#i-arrow" /></svg
+                ></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Insights -->
+      <section class="insights section" id="insights">
+        <div class="container">
+          <div class="approach-head">
+            <div class="approach-heading reveal">
+              <span class="eyebrow">Insights</span>
+              <h2 class="section-title">Thinking from<br />the field.</h2>
+            </div>
+            <a href="#contact" class="btn btn-outline-dark reveal"
+              >Talk to an expert
+              <svg class="btn-arrow"><use href="#i-arrow" /></svg
+            ></a>
+          </div>
+
+          <div class="insights-list reveal">
+            <article class="insight-row">
+              <span class="insight-meta">AI Systems</span>
+              <h3>Designing practical AI for African operations</h3>
+              <span class="insight-date">Read · 6 min</span>
+            </article>
+            <article class="insight-row">
+              <span class="insight-meta">Cloud</span>
+              <h3>The real economics of cloud migration</h3>
+              <span class="insight-date">Read · 8 min</span>
+            </article>
+            <article class="insight-row">
+              <span class="insight-meta">Security</span>
+              <h3>Building defensible infrastructure on a budget</h3>
+              <span class="insight-date">Read · 5 min</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Social proof -->
+      <section class="trust section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Trusted Partners</span>
+            <h2 class="section-title">
+              Trusted by teams building<br />what comes next.
+            </h2>
+          </div>
+
+          <div class="logo-strip reveal" aria-label="Clients">
+            <span class="logo-item">NOVA</span>
+            <span class="logo-item">VERTEX</span>
+            <span class="logo-item">ORBIT</span>
+            <span class="logo-item">NEXUS</span>
+            <span class="logo-item">ALTA</span>
+            <span class="logo-item">CORE</span>
+          </div>
+          <p class="logo-note reveal">
+            Placeholder client names for demonstration.
+          </p>
+
+          <div class="testi-grid">
+            <figure class="testi-card reveal">
+              <svg class="quote-mark star"><use href="#i-star" /></svg>
+              <blockquote>
+                "Technova moved us from fragmented tools to one dependable
+                platform. Delivery was fast and remarkably stable."
+              </blockquote>
+              <figcaption>
+                <span class="avatar">A.O.</span
+                ><span class="testi-name">Client Name</span
+                ><span class="testi-role">Product Lead, Company</span>
+              </figcaption>
+            </figure>
+            <figure class="testi-card reveal">
+              <svg class="quote-mark star"><use href="#i-star" /></svg>
+              <blockquote>
+                "They translated a vague idea into a working product with clear
+                priorities. A genuinely outcome-focused partner."
+              </blockquote>
+              <figcaption>
+                <span class="avatar">K.M.</span
+                ><span class="testi-name">Client Name</span
+                ><span class="testi-role">Founder, Company</span>
+              </figcaption>
+            </figure>
+            <figure class="testi-card reveal">
+              <svg class="quote-mark star"><use href="#i-star" /></svg>
+              <blockquote>
+                "Our systems are faster, safer, and cheaper to run. The
+                engineering quality speaks for itself."
+              </blockquote>
+              <figcaption>
+                <span class="avatar">T.E.</span
+                ><span class="testi-name">Client Name</span
+                ><span class="testi-role">CTO, Company</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA / Contact -->
+      <section class="cta section dark" id="contact">
+        <div class="cta-grid-bg" aria-hidden="true"></div>
+        <div class="container cta-inner">
+          <span class="eyebrow cta-eyebrow reveal">Start Now</span>
+          <h2 class="cta-title reveal">
+            Have a technology<br />challenge worth solving?
+          </h2>
+          <p class="cta-text reveal">
+            Let's turn your idea, problem, or opportunity into a practical
+            technology roadmap.
+          </p>
+          <div class="cta-actions reveal">
+            <a href="mailto:hello@technova.com" class="btn btn-primary btn-lg">
+              Start a Conversation
+              <svg class="btn-arrow"><use href="#i-arrow" /></svg>
+            </a>
+            <a href="mailto:hello@technova.com" class="cta-secondary"
+              >Tell us what you're building.</a
+            >
+          </div>
+
+          <ul class="contact-chips reveal">
+            <li>
+              <a href="mailto:hello@technova.com"
+                ><svg class="icon"><use href="#i-mail" /></svg
+                >hello@technova.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+2347098783278"
+                ><svg class="icon"><use href="#i-phone" /></svg>+234 709 878
+                3278</a
+              >
+            </li>
+            <li>
+              <span
+                ><svg class="icon"><use href="#i-pin" /></svg>29, Asa Otta,
+                Otta, Lagos</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="#home" class="logo" aria-label="Technova Inc. home">
+              <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+                <rect
+                  x="2"
+                  y="2"
+                  width="36"
+                  height="36"
+                  rx="11"
+                  fill="#A8F45B"
+                />
+                <path
+                  d="M13.5 11.5h13M20 11.5v17"
+                  stroke="#063B38"
+                  stroke-width="4.2"
+                  stroke-linecap="round"
+                />
+                <circle cx="29.5" cy="29.5" r="3" fill="#063B38" />
+              </svg>
+              <span class="logo-text">
+                <span class="logo-name">Technova</span>
+                <span class="logo-inc">INC.</span>
+              </span>
+            </a>
+            <p>Technology that moves your business forward.</p>
+            <div class="footer-socials">
+              <a href="#" aria-label="LinkedIn" class="social-link"
+                ><svg class="icon"><use href="#i-linkedin" /></svg
+              ></a>
+              <a href="#" aria-label="X (Twitter)" class="social-link"
+                ><svg class="icon"><use href="#i-x" /></svg
+              ></a>
+              <a href="#" aria-label="Instagram" class="social-link"
+                ><svg class="icon"><use href="#i-instagram" /></svg
+              ></a>
+            </div>
+          </div>
+
+          <nav class="footer-col" aria-label="Company">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#solutions">Solutions</a></li>
+              <li><a href="#work">Industries</a></li>
+              <li><a href="#contact">Careers</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-col" aria-label="Resources">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#insights">Insights</a></li>
+              <li><a href="#work">Case Studies</a></li>
+              <li><a href="#solutions">FAQs</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul class="footer-contact">
+              <li>
+                <a href="mailto:hello@technova.com"
+                  ><svg class="icon"><use href="#i-mail" /></svg
+                  >hello@technova.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+2347098783278"
+                  ><svg class="icon"><use href="#i-phone" /></svg>+234 709 878
+                  3278</a
+                >
+              </li>
+              <li>
+                <span
+                  ><svg class="icon"><use href="#i-pin" /></svg>29, Asa Otta,
+                  Otta, Lagos</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year"></span> Technova Inc. All rights reserved.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
