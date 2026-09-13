@@ -1,0 +1,37 @@
+# Dependency directories
+node_modules/
+bower_components/
+
+# Build and coverage output
+dist/
+build/
+coverage/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.cache/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+.docx
+.doc
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor and workspace files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.swp
+*.swo
+
+### Folder section
+extra/
